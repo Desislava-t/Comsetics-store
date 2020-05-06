@@ -1,0 +1,47 @@
+/*Content top*/
+.overaly {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.4);
+    opacity: 0;
+    transition: 0.5s ease-out;
+    text-align: center;
+    padding: 1.25em;
+    font-size: 1.25em;
+}
+
+.container:hover .overaly {
+    opacity: 1;
+}
+
+.img-hover-zoom {
+    overflow: hidden;
+
+}
+
+.img-hover-zoom img {
+    transition: .5s ease;
+    opacity: 1;
+    backface-visibility: hidden;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.2);
+}
+
+.container:hover .img-hover-zoom {
+    opacity: 0.8;
+}
+
+.text {
+    position: relative;
+    right: 0;
+    left: 0;
+    /* bottom: 104px; */
+    top: -97px;
+    text-align: center;
+    overflow: hidden;
+}
+
+/*./Content top*/

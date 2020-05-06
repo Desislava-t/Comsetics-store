@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="demo cosmetics webstore HTML, CSS, JavaScript">
+    <meta name="author" content="Desislava Georgieva">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/content-top.css">
+    <link rel="stylesheet" href="public/css/carousel.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    <style>
+
+
+    </style>
+</head>
+<body>
+<!-- Nav -->
+<header class="fixed-top w-100">
+    <!--Desktop-->
+    <nav class="navbar desktop navbar-expand-lg navbar-light">
+        <a class="navbar-brand logo-desktop text-uppercase text-white" href="index.html">Away</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <!--Dropdown My account-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link active text-uppercase" href="#" id="navbarDropdownMenuLink1" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        MY ACCOUNT <i class="fas fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <!--./Dropdown My account-->
+
+                <li class="nav-item">
+                    <a class="nav-link text-dark text-uppercase" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-dark text-uppercase" href="#">Blog</a>
+                </li>
+
+                <!--Dropdown  Our store-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link active text-uppercase" href="#" id="navbarDropdownMenuLink2" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Our store <i class="fas fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <!--./Dropdown  Our store-->
+
+                <!--Dropdown  More-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link active text-uppercase" href="#" id="navbarDropdownMenuLink3" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More <i class="fas fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <!--./Dropdown  More-->
+
+            </ul>
+            <!--Cart-->
+            <span class="nav-item dropdown text-uppercase text-white cart-desktop">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fab fa-opencart dropdown"></i>
+                </a>
+                <span class="dropdown-menu cart-dekst" aria-labelledby="navbarDropdownMenuLink">
+                   <span class="dropdown-item">Your cart is empty</span>
+                </span>
+            </span>
+
+            <!--./Cart-->
+        </div>
+    </nav>
+    <!--./Desktop-->
+
+    <!-- mobile nav -->
+    <div class="pos-f-t">
+        <nav class="navbar mobile">
+
+            <button class="navbar-toggler btn-style-menu" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent" title="Menu"
+                    aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-align-justify text-white icon-menu"></i>
+            </button>
+
+
+            <div class="navbar-toggler logo-style">
+                <a class="navbar-brand text-decoration-none text-white" title="Home page" href="index.html">
+                    Webstore
+                </a>
+            </div>
+
+
+            <button class="navbar-toggler btn-style-menu" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContentCart" title="Menu"
+                    aria-controls="navbarToggleExternalContentCart"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span>
+                	<i class="fab fa-opencart pr-1 text-white icon"></i>
+                </span>
+            </button>
+        </nav>
+        <!-- mobile nav menu -->
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="mobile p-4">
+                <!-- <h5 class="text-white h4">Collapsed content</h5>
+                <span class="text-muted">Toggleable via the navbar brand.</span> -->
+                <a href="#home" class="nav-link text-white">Home</a>
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLinkAccount" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Account
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkAccount">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+        </div>
+        <!-- ./mobile nav menu -->
+
+        <!-- mobile nav cart -->
+        <div class="collapse" id="navbarToggleExternalContentCart">
+            <div class="bg-dark p-4">
+                <!-- <h5 class="text-white h4">Collapsed content</h5>
+                <span class="text-muted">Toggleable via the navbar brand.</span> -->
+
+            </div>
+        </div>
+        <!-- ./mobile nav menu -->
+    </div>
+    <!-- ./mobile nav -->
+</header>
+<!-- ./nav -->
+
+<div class="container" style="margin-top:7em;">
+    <!-- Content-top -->
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="img-hover-zoom">
+                <img src="public/image/1.jpg" class="w-100" alt="product images">
+            </div>
+            <div class="text">
+                <h5>Colors</h5>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <!--Swiper-->
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="public/image/3.jpg" class="d-block w-100" alt="product images">
+                        <div class="overaly">Beautiful looks</div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="public/image/4.jpg" class="d-block w-100" alt="product images">
+                        <div class="overaly">Body Lotion</div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!--./Swiper-->
+        <div class="col-sm-4">
+            <div class="img-hover-zoom">
+                <img src="public/image/2.jpg" class="w-100" alt="product images">
+            </div>
+            <div class="text">
+                <h5>Night cream</h5>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </div>
+        </div>
+    </div>
+    <!-- .Content-top -->
+    <!--Shop By Categories Products-->
+    <div class="mt-5">
+        <span class="box">
+            <div class="text-center">
+                <p class="text-white float-left"> Shop By Categories Products</p>
+                <a href="#view-more">
+                    <button type="button" class="btn btn-light">View more</button>
+                </a>
+            </div>
+
+        </span>
+    </div>
+    <!--./Shop By Categories Products-->
+
+    <!--Carousel-->
+    <!--get from https://bootsnipp.com/snippets/exVWQ-->
+    <div class="container">
+        <div class="row carousel-swiper mt-5">
+            <div class="col-md-12">
+                <div id="productCarousel" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#productCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#productCarousel" data-slide-to="1"></li>
+                    </ol>
+
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <a href="#eye-liner" class="text-decoration-none text-dark">
+                                        <img src="public/image/categories/eye.png" alt="categories eye" class="w-100">
+                                        <div class="text-center">
+                                            Eye Liner
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#face-cream" class="text-decoration-none text-dark">
+                                        <img src="public/image/categories/face-cream.png" alt="face-cream"
+                                             class="w-100">
+                                        <div class="text-center">
+                                            Face cream
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#make-up" class="text-decoration-none text-dark">
+                                        <img src="public/image/categories/make-up.png" alt="make-up" class="w-100">
+                                        <div class="text-center">
+                                            Make up
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#nails" class="text-decoration-none text-dark">
+                                        <img src="public/image/categories/nails.png" alt="nails" class="w-100">
+                                        <div class="text-center">
+                                            Nails
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--.row-->
+                        </div>
+                        <!--.item-->
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <a href="#oils" class="text-decoration-none text-dark">
+                                        <img src="public/image/categories/oils.png" alt="oils" class="w-100">
+                                        <div class="text-center">
+                                            Oils
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#powder" class="text-decoration-none text-dark">
+                                        <img src="public/image/categories/powder.png" alt="powder" class="w-100">
+                                        <div class="text-center">
+                                            Powder
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#scents" class="text-decoration-none text-dark">
+                                        <img src="public/image/categories/scents.png" alt="scents" class="w-100">
+                                        <div class="text-center">
+                                            Scents
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#hair" class="text-decoration-none text-dark">
+                                        <img src="public/image/categories/hair.png" alt="hair" class="w-100">
+                                        <div class="text-center">
+                                            Hair
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--.row-->
+                        </div>
+                        <!--.item-->
+
+                    </div>
+                    <!--.carousel-inner-->
+                </div>
+
+            </div>
+            <!--./Carousel-->
+
+
+            <!--Products carousel-->
+
+            <div class="row" style="margin-top: 6em">
+                <div class="col-md-12">
+                    <div id="productsCarousel" class="carousel slide" data-ride="carousel">
+
+                        <div class="carousel-products text-center p-2">
+                        <span data-target="#productsCarousel" data-slide-to="0" class="active mr-2">Feature Products
+                        </span>
+                            <span data-target="#productsCarousel" data-slide-to="1" class="mr-2">Latest products</span>
+                            <span data-target="#productsCarousel" data-slide-to="2" class="mr-2">Top selling</span>
+                        </div>
+
+                        <div class="text-center p-2">
+                            <i class="fas fa-chevron-left carousel-arrows-left active" data-target="#productsCarousel"
+                               data-slide-to="0"></i>
+
+                            <i class="fas fa-chevron-right carousel-arrows-right" data-target="#productsCarousel"
+                               data-slide-to="next"></i>
+                        </div>
+
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#phoenix" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/1.jpg" alt="phoenix" class="w-100">
+                                            <div class="text-center">
+                                                Phoenix
+                                                <p>20$</p>
+                                            </div>
+                                        </a>
+                                        <a href="#orchid" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/2.jpg" alt="orchid" class="w-100">
+                                            <div class="text-center">
+                                                Orchid
+                                                <p>65$</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#magnolia" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/3.jpg" alt="magnolia"
+                                                 class="w-100">
+                                            <div class="text-center">
+                                                Magnolia
+                                                <p>45$</p>
+                                            </div>
+                                        </a>
+                                        <a href="#magnolia" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/9.jpg" alt="magnolia"
+                                                 class="w-100">
+                                            <div class="text-center">
+                                                Magnolia
+                                                <p>45$</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#herbivore" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/4.jpg" alt="herbivore"
+                                                 class="w-100">
+                                            <div class="text-center">
+                                                Herbivore
+                                                <p>75$</p>
+                                            </div>
+                                        </a>
+                                        <a href="#Sea-mist" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/5.jpg" alt="sea-mist"
+                                                 class="w-100">
+                                            <div class="text-center">
+                                                Sea mist
+                                                <p>99$</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#coconut" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/6.jpg" alt="coconut" class="w-100">
+                                            <div class="text-center">
+                                                Coconut
+                                                <p>22$</p>
+                                            </div>
+                                        </a>
+                                        <a href="#rose" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/7.jpg" alt="rose" class="w-100">
+                                            <div class="text-center">
+                                                Bulgarian Rouse
+                                                <p>89$</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                            <!--item-->
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#jasmine" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/8.jpg" alt="jasmine" class="w-100">
+                                            <div class="text-center">
+                                                Jasmine
+                                                <p>37$</p>
+                                            </div>
+                                        </a>
+                                        <a href="#macadamia" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/9.jpg" alt="macadamia"
+                                                 class="w-100">
+                                            <div class="text-center">
+                                                Macadamia
+                                                <p>82$</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#phoenix" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/1.jpg" alt="phoenix" class="w-100">
+                                            <div class="text-center">
+                                                Phoenix
+                                                <p>20$</p>
+                                            </div>
+                                        </a>
+                                        <a href="#orchid" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/2.jpg" alt="orchid" class="w-100">
+                                            <div class="text-center">
+                                                Orchid
+                                                <p>65$</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#magnolia" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/3.jpg" alt="magnolia"
+                                                 class="w-100">
+                                            <div class="text-center">
+                                                Magnolia
+                                                <p>45$</p>
+                                            </div>
+                                        </a>
+                                        <a href="#magnolia" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/9.jpg" alt="magnolia"
+                                                 class="w-100">
+                                            <div class="text-center">
+                                                Magnolia
+                                                <p>45$</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#Sea-mist" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/5.jpg" alt="sea-mist"
+                                                 class="w-100">
+                                            <div class="text-center">
+                                                Sea mist
+                                                <p>99$</p>
+                                            </div>
+                                        </a>
+                                        <a href="#coconut" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/6.jpg" alt="coconut" class="w-100">
+                                            <div class="text-center">
+                                                Coconut
+                                                <p>99$</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                            <!--item-->
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#jasmine" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/8.jpg" alt="jasmine" class="w-100">
+                                            <div class="text-center">
+                                                Jasmine
+                                                <p>37$</p>
+                                            </div>
+                                        </a>
+                                        <a href="#macadamia" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/9.jpg" alt="macadamia"
+                                                 class="w-100">
+                                            <div class="text-center">
+                                                Macadamia
+                                                <p>82$</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#phoenix" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/1.jpg" alt="phoenix" class="w-100">
+                                            <div class="text-center">
+                                                Phoenix
+                                                <p>20$</p>
+                                            </div>
+                                        </a>
+                                        <a href="#orchid" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/2.jpg" alt="orchid" class="w-100">
+                                            <div class="text-center">
+                                                Orchid
+                                                <p>65$</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#magnolia" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/3.jpg" alt="magnolia"
+                                                 class="w-100">
+                                            <div class="text-center">
+                                                Magnolia
+                                                <p>45$</p>
+                                            </div>
+                                        </a>
+                                        <a href="#magnolia" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/9.jpg" alt="magnolia"
+                                                 class="w-100">
+                                            <div class="text-center">
+                                                Magnolia
+                                                <p>45$</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#Sea-mist" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/5.jpg" alt="sea-mist"
+                                                 class="w-100">
+                                            <div class="text-center">
+                                                Sea mist
+                                                <p>99$</p>
+                                            </div>
+                                        </a>
+                                        <a href="#coconut" class="text-decoration-none text-dark">
+                                            <img src="public/image/featured-products/6.jpg" alt="coconut" class="w-100">
+                                            <div class="text-center">
+                                                Coconut
+                                                <p>99$</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                        </div>
+                        <!--.carousel-inner-->
+                    </div>
+                </div>
+                <!--./Carousel-->
+            </div>
+        </div>
+    </div>
+
+    <!--Carousel brand-->
+
+    <div class="row carousel-swiper">
+        <div class="col-12">
+            <div id="carouselBrand" class="carousel slide" data-ride="carousel">
+
+                <div class="text-center p-5">
+                    <i class="fas fa-chevron-left carousel-arrows-brand-left active" data-target="#carouselBrand"
+                       data-slide-to="0"></i>
+
+                    <i class="fas fa-chevron-right carousel-arrows-brand-right" data-target="#carouselBrand"
+                       data-slide-to="next"></i>
+                </div>
+
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-3">
+                                <a href="#brand">
+                                    <img src="public/image/brand/1.png" alt="brand">
+                                </a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#brand">
+                                    <img src="public/image/brand/2.png" alt="brand">
+                                </a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#brand">
+                                    <img src="public/image/brand/3.png" alt="brand">
+                                </a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#brand">
+                                    <img src="public/image/brand/4.png" alt="brand">
+                                </a>
+                            </div>
+                        </div>
+                        <!--.row-->
+                    </div>
+                    <!--.item-->
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <a href="#brand">
+                                    <img src="public/image/brand/1.png" alt="brand">
+                                </a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#brand">
+                                    <img src="public/image/brand/2.png" alt="brand">
+                                </a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#brand">
+                                    <img src="public/image/brand/3.png" alt="brand">
+                                </a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#brand">
+                                    <img src="public/image/brand/4.png" alt="brand">
+                                </a>
+                            </div>
+                        </div>
+                        <!--.row-->
+                    </div>
+                    <!--.item-->
+
+                </div>
+                <!--.carousel-inner-->
+            </div>
+            <!--.Carousel-->
+
+        </div>
+    </div>
+    <!--./Carousel brand-->
+
+    <!--Weekly deals-->
+    <div class="mt-5">
+        <div class="box-weekly">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="public/image/weekly-deals/1.png" alt="weekly-deals banner" class="w-100 d-block">
+                </div>
+                <!--Weekly carousel deals-->
+                <div class="col-sm-6">
+                    <div id="carouselWeeklyDeals" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="public/image/weekly-deals/1.jpg" class="d-block w-100" alt="product images">
+                                <div class="text-center">
+                                    <h3 class="weekly-deals-position-title w-100 p-3">Weekly deals</h3>
+                                    <div class="weekly-deals-position">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae,
+                                            consequuntur
+                                            deleniti, deserunt dignissimos dolor ducimus ex fuga maxime pariatur quam,
+                                            quo
+                                            repellat rerum sunt ullam vel voluptate. Provident, ratione.</p>
+                                        <p>65$
+                                            <del>99$</del>
+                                        </p>
+                                        <button type="button" class="btn btn-dark">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/image/weekly-deals/2.Jpeg" class="d-block w-100" alt="product images">
+                                <div class="text-center">
+                                    <h3 class="weekly-deals-position-title w-100 p-3">Weekly deals</h3>
+                                    <div class="weekly-deals-position">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae,
+                                            consequuntur
+                                            deleniti, deserunt dignissimos dolor ducimus ex fuga maxime pariatur quam,
+                                            quo
+                                            repellat rerum sunt ullam vel voluptate. Provident, ratione.</p>
+                                        <p>105$
+                                            <del>210$</del>
+                                        </p>
+                                        <button type="button" class="btn btn-dark">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/image/weekly-deals/3.jpg" class="d-block w-100" alt="product images">
+                                <div class="text-center">
+                                    <h3 class="weekly-deals-position-title w-100 p-3">Weekly deals</h3>
+                                    <div class="weekly-deals-position">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae,
+                                            consequuntur
+                                            deleniti, deserunt dignissimos dolor ducimus ex fuga maxime pariatur quam,
+                                            quo
+                                            repellat rerum sunt ullam vel voluptate. Provident, ratione.</p>
+                                        <p>105$
+                                            <del>210$</del>
+                                        </p>
+                                        <button type="button" class="btn btn-dark">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselWeeklyDeals" role="button" data-slide="prev">
+                            <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+                            <!--<span class="sr-only">Previous</span>-->
+                            <i class="fas fa-chevron-left weekly-deals-carousel-left" aria-hidden="true"></i>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselWeeklyDeals" role="button" data-slide="next">
+                            <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+                            <!--<span class="sr-only">Next</span>-->
+                            <i class="fas fa-chevron-right weekly-deals-carousel-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <!--./Weekly carousel deals-->
+            </div>
+        </div>
+    </div>
+    <!--./Weekly deals-->
+</div>
+
+<!--Footer-->
+<footer class="footer mt-5">
+    <div class="container bottom_border">
+        <div class="row">
+            <div class="col-sm-4 col">
+                <ul>
+                    <li class="h3 text-white text-uppercase header pt-3 pb-3">
+                        Information
+                    </li>
+                    <li class="pb-1">
+                        <a href="#about-us" class="text-decoration-none text-white">About us</a>
+                    </li>
+                    <li class="pb-1">
+                        <a href="#delivery" class="text-decoration-none text-white">Delivery information</a>
+                    </li>
+                    <li class="pb-1">
+                        <a href="#privacy" class="text-decoration-none text-white">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#terms" class="text-decoration-none text-white">Terms & Conditions</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-sm-4 col">
+                <ul>
+                    <li class="h3 text-white text-uppercase header pt-3 pb-3">
+                        Contact us
+                    </li>
+                    <li class="pb-1 text-white">
+                        <i class="fas fa-map-marker-alt pr-1"></i>
+                        <span>
+                            Cosmetic Store.
+                            111, Puffin Street, Bulgaria, Varna
+                        </span>
+                    </li>
+                    <li class="pb-1 text-white">
+                        <i class="fas fa-phone-volume pr-1"></i>
+                        <span>
+                            +359 888888899
+                        </span>
+                    </li>
+                    <li class="text-white">
+                        <i class="far fa-envelope"></i>
+                        <span>
+                            info@cosmetics_store@gmail.com
+                        </span>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="col-sm-4 col">
+                <ul>
+                    <li class="h3 text-white text-uppercase header pt-3 pb-3">
+                        Follow us
+                    </li>
+                    <li class="pb-1">
+                        <a href="#faxebook" class="text-decoration-none text-white">
+                            <i class="fab fa-facebook-f pr-1"></i>
+                            <span>Facebook</span>
+                        </a>
+                    </li>
+                    <li class="pb-1">
+                        <a href="#instagram" class="text-decoration-none text-white">
+                            <i class="fab fa-instagram pr-1"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </li>
+                    <li class="pb-1">
+                        <a href="#twitter" class="text-decoration-none text-white">
+                            <i class="fab fa-twitter pr-1"></i>
+                            <span>Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#snapchat" class="text-decoration-none text-white">
+                            <i class="fab fa-snapchat pr-1"></i>
+                            <span>Snapchat</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--./Footer-->
+
+
+</div>
+
+</body>
+</html>

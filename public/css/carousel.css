@@ -1,0 +1,96 @@
+/*Shop By Categories Products*/
+.box {
+    background: #2f7e88;
+    padding: 2em;
+    display: block;
+    width: 100%;
+    border-radius: 3%;
+    border-top: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+/*./Shop By Categories Products*/
+
+/*Carousel*/
+/*get from https://bootsnipp.com/snippets/exVWQ*/
+.carousel-swiper .carousel-indicators li {
+    background: #2f7e88;
+    border-radius: 50%;
+    /*width: 8px;*/
+    height: 8px;
+}
+
+.carousel-indicators {
+    bottom: -66px !important;
+}
+
+/*./Carousel*/
+
+/*Carousel products*/
+.carousel-products {
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.carousel-products span:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-arrows-left {
+    position: absolute;
+    bottom: 279px;
+    left: 0;
+    z-index: 6
+}
+
+.carousel-arrows-right {
+    position: absolute;
+    bottom: 279px;
+    right: 0;
+    z-index: 6
+}
+
+/*.Carousel products*/
+
+
+/*Carousel brand*/
+.carousel-arrows-brand-left {
+    position: absolute;
+    bottom: 31px;
+    left: 0px;
+    z-index: 6
+}
+
+.carousel-arrows-brand-right {
+    position: absolute;
+    bottom: 31px;
+    right: 0px;
+    z-index: 6
+}
+
+/*.Carousel brand*/
+
+
+/*Weekly carousel deals*/
+.box-weekly {
+    width: 100%;
+    height: auto;
+    /*background: #80808036;*/
+}
+
+.weekly-deals-position {
+    position: absolute;
+    bottom: 10px;
+}
+
+.weekly-deals-position-title {
+    position: absolute;
+    top: 29px;
+}
+
+.weekly-deals-carousel-left,
+.weekly-deals-carousel-right {
+    position: absolute;
+}
+
+
+/*.Weekly carousel deals*/
