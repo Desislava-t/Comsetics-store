@@ -61,10 +61,11 @@ a:focus {
 /*cart icon*/
 
 .logo-desktop,
-.cart-desktop{
+.cart-desktop {
     background: #2f7e88;
     padding: 1em;
 }
+
 .navbar:hover .fa-align-justify::before {
     content: '\f103';
 }
@@ -86,7 +87,7 @@ a:focus {
     color: #fff;
 }
 
-.cart-dekst{
+.cart-dekst {
     position: absolute;
     left: -106px !important;
 }
@@ -95,7 +96,6 @@ a:focus {
     /*.dropdown-menu {*/
     /*left: -53px !important;*/
     /*}*/
-
     .mobile {
         display: none !important;
     }
@@ -105,7 +105,8 @@ a:focus {
     .desktop {
         display: none !important;
     }
-    .navbar{
+
+    .navbar {
         padding: .5rem 1rem !important;
     }
 }
@@ -132,5 +133,8 @@ a:focus {
     padding-bottom: 20px;
 }
 
+.link-hover:hover {
+    text-shadow: 2px 3px 5px #000 !important;
+}
 
 /*.Footer*/

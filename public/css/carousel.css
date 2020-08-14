@@ -56,14 +56,14 @@
 .carousel-arrows-brand-left {
     position: absolute;
     bottom: 31px;
-    left: 0px;
+    left: 0;
     z-index: 6
 }
 
 .carousel-arrows-brand-right {
     position: absolute;
     bottom: 31px;
-    right: 0px;
+    right: 0;
     z-index: 6
 }
 

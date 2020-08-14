@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="demo cosmetics webstore HTML, CSS, JavaScript">
+    <meta name="description" content="demo cosmetics webstore HTML, CSS, Bootstrap">
     <meta name="author" content="Desislava Georgieva">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>Cosmetics store</title>
     <link rel="stylesheet" href="public/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="public/css/content-top.css">
@@ -33,7 +34,7 @@
 <header class="fixed-top w-100">
     <!--Desktop-->
     <nav class="navbar desktop navbar-expand-lg navbar-light">
-        <a class="navbar-brand logo-desktop text-uppercase text-white" href="index.html">Away</a>
+        <a class="navbar-brand logo-desktop text-uppercase text-white" href="index.html" aria-label="logo">Away</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         </button>
@@ -42,35 +43,35 @@
                 <!--Dropdown My account-->
                 <li class="nav-item dropdown">
                     <a class="nav-link active text-uppercase" href="#" id="navbarDropdownMenuLink1" role="button"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        MY ACCOUNT <i class="fas fa-angle-down"></i>
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="my account">
+                        My account <i class="fas fa-angle-down"></i>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#" aria-label="action">Action</a>
+                        <a class="dropdown-item" href="#" aria-label="another action">Another action</a>
+                        <a class="dropdown-item" href="#" aria-label="something else">Something else here</a>
                     </div>
                 </li>
                 <!--./Dropdown My account-->
 
                 <li class="nav-item">
-                    <a class="nav-link text-dark text-uppercase" href="#">Home</a>
+                    <a class="nav-link text-dark text-uppercase" href="#" aria-label="home page">Home</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-dark text-uppercase" href="#">Blog</a>
+                    <a class="nav-link text-dark text-uppercase" href="#" aria-label="blog">Blog</a>
                 </li>
 
                 <!--Dropdown  Our store-->
                 <li class="nav-item dropdown">
                     <a class="nav-link active text-uppercase" href="#" id="navbarDropdownMenuLink2" role="button"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="our store">
                         Our store <i class="fas fa-angle-down"></i>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#" aria-label="action">Action</a>
+                        <a class="dropdown-item" href="#" aria-label="another action">Another action</a>
+                        <a class="dropdown-item" href="#" aria-label="something else">Something else here</a>
                     </div>
                 </li>
                 <!--./Dropdown  Our store-->
@@ -78,13 +79,13 @@
                 <!--Dropdown  More-->
                 <li class="nav-item dropdown">
                     <a class="nav-link active text-uppercase" href="#" id="navbarDropdownMenuLink3" role="button"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="more">
                         More <i class="fas fa-angle-down"></i>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#" aria-label="action">Action</a>
+                        <a class="dropdown-item" href="#" aria-label="another action">Another action</a>
+                        <a class="dropdown-item" href="#" aria-label="something else">Something else here</a>
                     </div>
                 </li>
                 <!--./Dropdown  More-->
@@ -119,7 +120,8 @@
 
 
             <div class="navbar-toggler logo-style">
-                <a class="navbar-brand text-decoration-none text-white" title="Home page" href="index.html">
+                <a class="navbar-brand text-decoration-none text-white" title="Home page" href="index.html"
+                   aria-label="Home page">
                     Webstore
                 </a>
             </div>
@@ -139,15 +141,15 @@
             <div class="mobile p-4">
                 <!-- <h5 class="text-white h4">Collapsed content</h5>
                 <span class="text-muted">Toggleable via the navbar brand.</span> -->
-                <a href="#home" class="nav-link text-white">Home</a>
+                <a href="#" class="nav-link text-white" aria-label="home">Home</a>
                 <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLinkAccount" role="button"
-                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="account">
                     Account
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkAccount">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#" aria-label="action">Action</a>
+                    <a class="dropdown-item" href="#" aria-label="another action">Another action</a>
+                    <a class="dropdown-item" href="#" aria-label="something else">Something else here</a>
                 </div>
             </div>
         </div>
@@ -156,8 +158,7 @@
         <!-- mobile nav cart -->
         <div class="collapse" id="navbarToggleExternalContentCart">
             <div class="bg-dark p-4">
-                <!-- <h5 class="text-white h4">Collapsed content</h5>
-                <span class="text-muted">Toggleable via the navbar brand.</span> -->
+                <span class="text-white">Your cart is empty! </span> -->
 
             </div>
         </div>
@@ -220,7 +221,7 @@
         <span class="box">
             <div class="text-center">
                 <p class="text-white float-left"> Shop By Categories Products</p>
-                <a href="#view-more">
+                <a href="#" aria-label="view more">
                     <button type="button" class="btn btn-light">View more</button>
                 </a>
             </div>
@@ -247,7 +248,7 @@
                         <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-md-3">
-                                    <a href="#eye-liner" class="text-decoration-none text-dark">
+                                    <a href="#eye-liner" class="text-decoration-none text-dark" aria-label="ele-liner">
                                         <img src="public/image/categories/eye.png" alt="categories eye" class="w-100">
                                         <div class="text-center">
                                             Eye Liner
@@ -255,7 +256,8 @@
                                     </a>
                                 </div>
                                 <div class="col-md-3">
-                                    <a href="#face-cream" class="text-decoration-none text-dark">
+                                    <a href="#face-cream" class="text-decoration-none text-dark"
+                                       aria-label="face-cream">
                                         <img src="public/image/categories/face-cream.png" alt="face-cream"
                                              class="w-100">
                                         <div class="text-center">
@@ -264,7 +266,7 @@
                                     </a>
                                 </div>
                                 <div class="col-md-3">
-                                    <a href="#make-up" class="text-decoration-none text-dark">
+                                    <a href="#make-up" class="text-decoration-none text-dark" aria-label="make-up">
                                         <img src="public/image/categories/make-up.png" alt="make-up" class="w-100">
                                         <div class="text-center">
                                             Make up
@@ -272,7 +274,7 @@
                                     </a>
                                 </div>
                                 <div class="col-md-3">
-                                    <a href="#nails" class="text-decoration-none text-dark">
+                                    <a href="#nails" class="text-decoration-none text-dark" aria-label="nails">
                                         <img src="public/image/categories/nails.png" alt="nails" class="w-100">
                                         <div class="text-center">
                                             Nails
@@ -287,7 +289,7 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-md-3">
-                                    <a href="#oils" class="text-decoration-none text-dark">
+                                    <a href="#oils" class="text-decoration-none text-dark" aria-label="oils">
                                         <img src="public/image/categories/oils.png" alt="oils" class="w-100">
                                         <div class="text-center">
                                             Oils
@@ -295,7 +297,7 @@
                                     </a>
                                 </div>
                                 <div class="col-md-3">
-                                    <a href="#powder" class="text-decoration-none text-dark">
+                                    <a href="#powder" class="text-decoration-none text-dark" aria-label="powder">
                                         <img src="public/image/categories/powder.png" alt="powder" class="w-100">
                                         <div class="text-center">
                                             Powder
@@ -303,7 +305,7 @@
                                     </a>
                                 </div>
                                 <div class="col-md-3">
-                                    <a href="#scents" class="text-decoration-none text-dark">
+                                    <a href="#scents" class="text-decoration-none text-dark" aria-label="scents">
                                         <img src="public/image/categories/scents.png" alt="scents" class="w-100">
                                         <div class="text-center">
                                             Scents
@@ -311,7 +313,7 @@
                                     </a>
                                 </div>
                                 <div class="col-md-3">
-                                    <a href="#hair" class="text-decoration-none text-dark">
+                                    <a href="#hair" class="text-decoration-none text-dark" aria-label="hair">
                                         <img src="public/image/categories/hair.png" alt="hair" class="w-100">
                                         <div class="text-center">
                                             Hair
@@ -358,14 +360,14 @@
                             <div class="carousel-item active">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <a href="#phoenix" class="text-decoration-none text-dark">
+                                        <a href="#phoenix" class="text-decoration-none text-dark" aria-label="phoenix">
                                             <img src="public/image/featured-products/1.jpg" alt="phoenix" class="w-100">
                                             <div class="text-center">
                                                 Phoenix
                                                 <p>20$</p>
                                             </div>
                                         </a>
-                                        <a href="#orchid" class="text-decoration-none text-dark">
+                                        <a href="#orchid" class="text-decoration-none text-dark" aria-label="orchid">
                                             <img src="public/image/featured-products/2.jpg" alt="orchid" class="w-100">
                                             <div class="text-center">
                                                 Orchid
@@ -374,7 +376,8 @@
                                         </a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a href="#magnolia" class="text-decoration-none text-dark">
+                                        <a href="#magnolia" class="text-decoration-none text-dark"
+                                           aria-label="magnolia">
                                             <img src="public/image/featured-products/3.jpg" alt="magnolia"
                                                  class="w-100">
                                             <div class="text-center">
@@ -382,7 +385,8 @@
                                                 <p>45$</p>
                                             </div>
                                         </a>
-                                        <a href="#magnolia" class="text-decoration-none text-dark">
+                                        <a href="#magnolia" class="text-decoration-none text-dark"
+                                           aria-label="magnolia">
                                             <img src="public/image/featured-products/9.jpg" alt="magnolia"
                                                  class="w-100">
                                             <div class="text-center">
@@ -392,7 +396,8 @@
                                         </a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a href="#herbivore" class="text-decoration-none text-dark">
+                                        <a href="#herbivore" class="text-decoration-none text-dark"
+                                           aria-label="herbivore">
                                             <img src="public/image/featured-products/4.jpg" alt="herbivore"
                                                  class="w-100">
                                             <div class="text-center">
@@ -400,7 +405,8 @@
                                                 <p>75$</p>
                                             </div>
                                         </a>
-                                        <a href="#Sea-mist" class="text-decoration-none text-dark">
+                                        <a href="#Sea-mist" class="text-decoration-none text-dark"
+                                           aria-label="sea-mist">
                                             <img src="public/image/featured-products/5.jpg" alt="sea-mist"
                                                  class="w-100">
                                             <div class="text-center">
@@ -410,14 +416,14 @@
                                         </a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a href="#coconut" class="text-decoration-none text-dark">
+                                        <a href="#coconut" class="text-decoration-none text-dark" aria-label="coconut">
                                             <img src="public/image/featured-products/6.jpg" alt="coconut" class="w-100">
                                             <div class="text-center">
                                                 Coconut
                                                 <p>22$</p>
                                             </div>
                                         </a>
-                                        <a href="#rose" class="text-decoration-none text-dark">
+                                        <a href="#rose" class="text-decoration-none text-dark" aria-label="rose">
                                             <img src="public/image/featured-products/7.jpg" alt="rose" class="w-100">
                                             <div class="text-center">
                                                 Bulgarian Rouse
@@ -434,14 +440,15 @@
                             <div class="carousel-item">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <a href="#jasmine" class="text-decoration-none text-dark">
+                                        <a href="#jasmine" class="text-decoration-none text-dark" aria-label="jasmine">
                                             <img src="public/image/featured-products/8.jpg" alt="jasmine" class="w-100">
                                             <div class="text-center">
                                                 Jasmine
                                                 <p>37$</p>
                                             </div>
                                         </a>
-                                        <a href="#macadamia" class="text-decoration-none text-dark">
+                                        <a href="#macadamia" class="text-decoration-none text-dark"
+                                           aria-label="macadamia">
                                             <img src="public/image/featured-products/9.jpg" alt="macadamia"
                                                  class="w-100">
                                             <div class="text-center">
@@ -451,14 +458,14 @@
                                         </a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a href="#phoenix" class="text-decoration-none text-dark">
+                                        <a href="#phoenix" class="text-decoration-none text-dark" aria-label="phoenix">
                                             <img src="public/image/featured-products/1.jpg" alt="phoenix" class="w-100">
                                             <div class="text-center">
                                                 Phoenix
                                                 <p>20$</p>
                                             </div>
                                         </a>
-                                        <a href="#orchid" class="text-decoration-none text-dark">
+                                        <a href="#orchid" class="text-decoration-none text-dark" aria-label="orchid">
                                             <img src="public/image/featured-products/2.jpg" alt="orchid" class="w-100">
                                             <div class="text-center">
                                                 Orchid
@@ -467,7 +474,8 @@
                                         </a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a href="#magnolia" class="text-decoration-none text-dark">
+                                        <a href="#magnolia" class="text-decoration-none text-dark"
+                                           aria-label="magnolia">
                                             <img src="public/image/featured-products/3.jpg" alt="magnolia"
                                                  class="w-100">
                                             <div class="text-center">
@@ -475,7 +483,8 @@
                                                 <p>45$</p>
                                             </div>
                                         </a>
-                                        <a href="#magnolia" class="text-decoration-none text-dark">
+                                        <a href="#magnolia" class="text-decoration-none text-dark"
+                                           aria-label="magnolia">
                                             <img src="public/image/featured-products/9.jpg" alt="magnolia"
                                                  class="w-100">
                                             <div class="text-center">
@@ -485,7 +494,8 @@
                                         </a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a href="#Sea-mist" class="text-decoration-none text-dark">
+                                        <a href="#Sea-mist" class="text-decoration-none text-dark"
+                                           aria-label="sea-mist">
                                             <img src="public/image/featured-products/5.jpg" alt="sea-mist"
                                                  class="w-100">
                                             <div class="text-center">
@@ -510,14 +520,15 @@
                             <div class="carousel-item">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <a href="#jasmine" class="text-decoration-none text-dark">
+                                        <a href="#jasmine" class="text-decoration-none text-dark" aria-label="jasmine">
                                             <img src="public/image/featured-products/8.jpg" alt="jasmine" class="w-100">
                                             <div class="text-center">
                                                 Jasmine
                                                 <p>37$</p>
                                             </div>
                                         </a>
-                                        <a href="#macadamia" class="text-decoration-none text-dark">
+                                        <a href="#macadamia" class="text-decoration-none text-dark"
+                                           aria-label="macadamia">
                                             <img src="public/image/featured-products/9.jpg" alt="macadamia"
                                                  class="w-100">
                                             <div class="text-center">
@@ -527,14 +538,14 @@
                                         </a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a href="#phoenix" class="text-decoration-none text-dark">
+                                        <a href="#phoenix" class="text-decoration-none text-dark" aria-label="phoenix">
                                             <img src="public/image/featured-products/1.jpg" alt="phoenix" class="w-100">
                                             <div class="text-center">
                                                 Phoenix
                                                 <p>20$</p>
                                             </div>
                                         </a>
-                                        <a href="#orchid" class="text-decoration-none text-dark">
+                                        <a href="#orchid" class="text-decoration-none text-dark" aria-label="orchid">
                                             <img src="public/image/featured-products/2.jpg" alt="orchid" class="w-100">
                                             <div class="text-center">
                                                 Orchid
@@ -543,7 +554,8 @@
                                         </a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a href="#magnolia" class="text-decoration-none text-dark">
+                                        <a href="#magnolia" class="text-decoration-none text-dark"
+                                           aria-label="magnolia">
                                             <img src="public/image/featured-products/3.jpg" alt="magnolia"
                                                  class="w-100">
                                             <div class="text-center">
@@ -551,7 +563,8 @@
                                                 <p>45$</p>
                                             </div>
                                         </a>
-                                        <a href="#magnolia" class="text-decoration-none text-dark">
+                                        <a href="#magnolia" class="text-decoration-none text-dark"
+                                           aria-label="magnolia">
                                             <img src="public/image/featured-products/9.jpg" alt="magnolia"
                                                  class="w-100">
                                             <div class="text-center">
@@ -561,7 +574,8 @@
                                         </a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a href="#Sea-mist" class="text-decoration-none text-dark">
+                                        <a href="#Sea-mist" class="text-decoration-none text-dark"
+                                           aria-label="sea-mist">
                                             <img src="public/image/featured-products/5.jpg" alt="sea-mist"
                                                  class="w-100">
                                             <div class="text-center">
@@ -569,7 +583,7 @@
                                                 <p>99$</p>
                                             </div>
                                         </a>
-                                        <a href="#coconut" class="text-decoration-none text-dark">
+                                        <a href="#coconut" class="text-decoration-none text-dark" aria-label="coconut">
                                             <img src="public/image/featured-products/6.jpg" alt="coconut" class="w-100">
                                             <div class="text-center">
                                                 Coconut
@@ -609,22 +623,22 @@
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-3">
-                                <a href="#brand">
+                                <a href="#brand" aria-label="brand">
                                     <img src="public/image/brand/1.png" alt="brand">
                                 </a>
                             </div>
                             <div class="col-3">
-                                <a href="#brand">
+                                <a href="#brand" aria-label="brand">
                                     <img src="public/image/brand/2.png" alt="brand">
                                 </a>
                             </div>
                             <div class="col-3">
-                                <a href="#brand">
+                                <a href="#brand" aria-label="brand">
                                     <img src="public/image/brand/3.png" alt="brand">
                                 </a>
                             </div>
                             <div class="col-3">
-                                <a href="#brand">
+                                <a href="#brand" aria-label="brand">
                                     <img src="public/image/brand/4.png" alt="brand">
                                 </a>
                             </div>
@@ -636,22 +650,22 @@
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-3">
-                                <a href="#brand">
+                                <a href="#brand" aria-label="brand">
                                     <img src="public/image/brand/1.png" alt="brand">
                                 </a>
                             </div>
                             <div class="col-3">
-                                <a href="#brand">
+                                <a href="#brand" aria-label="brand">
                                     <img src="public/image/brand/2.png" alt="brand">
                                 </a>
                             </div>
                             <div class="col-3">
-                                <a href="#brand">
+                                <a href="#brand" aria-label="brand">
                                     <img src="public/image/brand/3.png" alt="brand">
                                 </a>
                             </div>
                             <div class="col-3">
-                                <a href="#brand">
+                                <a href="#brand" aria-label="brand">
                                     <img src="public/image/brand/4.png" alt="brand">
                                 </a>
                             </div>
@@ -761,16 +775,16 @@
                         Information
                     </li>
                     <li class="pb-1">
-                        <a href="#about-us" class="text-decoration-none text-white">About us</a>
+                        <a href="#about-us" class="text-decoration-none text-white link-hover" aria-label="about us">About us</a>
                     </li>
                     <li class="pb-1">
-                        <a href="#delivery" class="text-decoration-none text-white">Delivery information</a>
+                        <a href="#delivery" class="text-decoration-none text-white link-hover" aria-label="delivery">Delivery information</a>
                     </li>
                     <li class="pb-1">
-                        <a href="#privacy" class="text-decoration-none text-white">Privacy Policy</a>
+                        <a href="#privacy" class="text-decoration-none text-white link-hover" aria-label="privacy">Privacy Policy</a>
                     </li>
                     <li>
-                        <a href="#terms" class="text-decoration-none text-white">Terms & Conditions</a>
+                        <a href="#terms" class="text-decoration-none text-white link-hover" aria-label="terms">Terms & Conditions</a>
                     </li>
                 </ul>
             </div>
@@ -780,20 +794,20 @@
                     <li class="h3 text-white text-uppercase header pt-3 pb-3">
                         Contact us
                     </li>
-                    <li class="pb-1 text-white">
+                    <li class="pb-1 text-white link-hover">
                         <i class="fas fa-map-marker-alt pr-1"></i>
                         <span>
                             Cosmetic Store.
                             111, Puffin Street, Bulgaria, Varna
                         </span>
                     </li>
-                    <li class="pb-1 text-white">
+                    <li class="pb-1 text-white link-hover">
                         <i class="fas fa-phone-volume pr-1"></i>
                         <span>
                             +359 888888899
                         </span>
                     </li>
-                    <li class="text-white">
+                    <li class="text-white link-hover">
                         <i class="far fa-envelope"></i>
                         <span>
                             info@cosmetics_store@gmail.com
@@ -809,25 +823,25 @@
                         Follow us
                     </li>
                     <li class="pb-1">
-                        <a href="#faxebook" class="text-decoration-none text-white">
+                        <a href="#facebook" class="text-decoration-none text-white link-hover" aria-label="facebook">
                             <i class="fab fa-facebook-f pr-1"></i>
                             <span>Facebook</span>
                         </a>
                     </li>
                     <li class="pb-1">
-                        <a href="#instagram" class="text-decoration-none text-white">
+                        <a href="#instagram" class="text-decoration-none text-white link-hover" aria-label="instagram">
                             <i class="fab fa-instagram pr-1"></i>
                             <span>Instagram</span>
                         </a>
                     </li>
                     <li class="pb-1">
-                        <a href="#twitter" class="text-decoration-none text-white">
+                        <a href="#twitter" class="text-decoration-none text-white link-hover" aria-label="twitter">
                             <i class="fab fa-twitter pr-1"></i>
                             <span>Twitter</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#snapchat" class="text-decoration-none text-white">
+                        <a href="#snapchat" class="text-decoration-none text-white link-hover" aria-label="snapchat">
                             <i class="fab fa-snapchat pr-1"></i>
                             <span>Snapchat</span>
                         </a>
@@ -835,6 +849,9 @@
                 </ul>
             </div>
         </div>
+    </div>
+    <div class="text-center">
+        <p class="text-white">Desislava Georgieva</p>
     </div>
 </footer>
 <!--./Footer-->
