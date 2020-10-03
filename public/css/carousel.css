@@ -12,6 +12,11 @@
 
 /*Carousel*/
 /*get from https://bootsnipp.com/snippets/exVWQ*/
+
+carousel_mt {
+    margin-top: 6em;
+}
+
 .carousel-swiper .carousel-indicators li {
     background: #2f7e88;
     border-radius: 50%;
